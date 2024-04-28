@@ -74,7 +74,7 @@ const MenuList = ({ menu, customClass, anchorClass, isOpen, setIsOpen, level }) 
             </Row>
           </div>
         )}
-        {menu?.children && !menu?.customChildren && (
+        {menu?.children && menu?.children?.length > 0 && !menu?.customChildren && (
           <ul className={`dropdown-menu ${isOpen[level] === menu.title ? 'show' : ''}`}>
             {menu.children && (
               <>
