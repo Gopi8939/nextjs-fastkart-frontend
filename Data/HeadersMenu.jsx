@@ -11,6 +11,7 @@ export const headerMenu = [
   {
     id: 1,
     title: 'Home',
+    path: "/",
     // type: "link",
     // styleType: 'link', 
     // customChildren: false,
