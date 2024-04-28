@@ -16,10 +16,10 @@ const MainHeaderMenu = () => {
   return (
     <ul className='navbar-nav'>
       {filterMenu.map((menu, i) => (
-        <MenuList menu={menu} key={i} customClass={'nav-item dropdown'} level={0} isOpen={isOpen} setIsOpen={setIsOpen} />
+        <MenuList menu={menu} key={i} customClass={`nav-item ${menu?.title === "Products" ? 'dropdown' : '' }`} level={0} isOpen={isOpen} setIsOpen={setIsOpen} />
       ))}
     </ul>
-  );
+  );  
 };
 
 export default MainHeaderMenu;
